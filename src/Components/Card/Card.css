@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+q {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--Very--dark--grayish--blue);
+  margin: 30px 20px;
+}
+
+.avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.job {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: capitalize;
+
+  color: var(--Grayish--blue);
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    margin: 0;
+    height: 23em;
+  }
+}

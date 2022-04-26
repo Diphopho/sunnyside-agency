@@ -1,0 +1,85 @@
+.service {
+  /* background-size: 100%;
+  background-repeat: no-repeat; */
+  /* min-height: 600px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 600px;
+}
+
+.service .text-wrapper {
+  padding: 20px 40px;
+}
+
+.service h3 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 27px;
+}
+
+.service p {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.graphic-design h3,
+p {
+  color: var(--Dark--desaturated--cyan);
+}
+.photography h3,
+p {
+  color: var(--Dark--blue);
+}
+
+.graphic-design {
+  background: url("../../assets/mobile/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-origin: padding-box;
+  /* height: 100vh; */
+}
+.photography {
+  background-image: url("../../assets/mobile/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-origin: padding-box;
+  /* height: 100vh; */
+}
+
+@media screen and (min-width: 528px) {
+  .graphic-design {
+    background-image: url("../../assets/desktop/image-graphic-design.jpg");
+  }
+  .photography {
+    background-image: url("../../assets/desktop/image-photography.jpg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .service {
+    width: 50%;
+    /* height: 600px; */
+  }
+
+  .service .text-wrapper {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .service .text-wrapper {
+    max-width: 58%;
+  }
+}

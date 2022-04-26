@@ -1,0 +1,27 @@
+.testimony {
+  margin-top: 60px;
+}
+.testimony h2 {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  text-align: center;
+
+  color: var(--Grayish--blue);
+}
+
+@media screen and (min-width: 1024px) {
+  .testimony {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 334px;
+    /* gap: 0.5em; */
+    padding: 5em 6em;
+  }
+
+  .testimony__title {
+    grid-column: 1 / span 3;
+    /* align-items: center; */
+  }
+}

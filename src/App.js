@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  Footer,
+  Header,
+  About,
+  Project,
+  Services,
+  Testimony,
+} from "./Container";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  Aos.init({
+    duration: 600, // values from 0 to 3000, with step 50ms
+    easing: "ease-in-out", // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    anchorPlacement: "top-center",
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <About />
+      <Services />
+      <Testimony />
+      <Project />
+      <Footer />
     </div>
   );
 }

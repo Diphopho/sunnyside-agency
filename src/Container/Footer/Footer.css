@@ -1,0 +1,82 @@
+.footer {
+  background-color: hsl(167, 44%, 70%);
+  color: var(--Dark--moderate--cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 63px 24px 10px;
+}
+
+.footer__logo {
+  max-width: 169px;
+  max-height: 35px;
+  filter: invert(50%) sepia(8%) saturate(2132%) hue-rotate(118deg)
+    brightness(95%) contrast(90%);
+}
+
+.footer__menu {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.footer__menu li a {
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--Dark--moderate--cyan);
+}
+
+.footer__socmed {
+  margin-top: 90px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.attribution a {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 25px;
+  z-index: 10;
+  position: relative;
+}
+
+.attribution a::before {
+  content: "";
+  /* display: block; */
+  width: 105%;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  /* background-color: var(--Dark--moderate--cyan); */
+  background-color: var(--Dark--moderate--cyan);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.attribution a:hover {
+  color: hsl(167, 44%, 70%);
+  /* color: red; */
+}
+
+.attribution a:hover::before {
+  transform: scaleX(1);
+}
+
+.attribution,
+.attribution a {
+  font-family: "Barlow";
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 5% 30%;
+  }
+}
