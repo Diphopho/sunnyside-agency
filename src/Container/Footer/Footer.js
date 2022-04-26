@@ -29,11 +29,21 @@ function Footer() {
       </ul>
       <div className="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
           Frontend Mentor
         </a>
         . Coded by
-        <a href="https://www.frontendmentor.io/profile/Diphopho">Diphopho</a>.
+        <a
+          href="https://www.frontendmentor.io/profile/Diphopho"
+          rel="noreferrer"
+        >
+          Diphopho
+        </a>
+        .
       </div>
     </footer>
   );
